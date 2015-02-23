@@ -16,6 +16,10 @@
 			body
 				{
 					background-color: #48484D; /*#A4A971*/
+					background-image: url('img/OT_blackMirror_half.png');			/*ON/OFF*/
+					background-size: 100%;
+					background-repeat: no-repeat;
+					width: 100%;
 					padding: 0;
 					margin: 0;		
 				}	
@@ -27,18 +31,18 @@
 				}
 			.mainContent
 				{
-					width: 100%;
-					margin: 0;
+					width: 90%;
+					margin: 12% 0% 4% 8.5%;
 					float: left;
 					overflow: hidden;
 				}
 			.contentContainer
 				{
-					width: 100%;
+					width: 90%;
 					/*background-color: #fff;
-					opacity: 0.4;*/		
+					opacity: 0.4;*/
 					position: relative;
-					overflow:;						
+					overflow: hidden;						
 				}
 			.logoDiv
 				{
@@ -47,13 +51,12 @@
 				}	
 			.footMenu
 				{		
-					width: 100%;
-					height: 260px;
-					margin-top: 1%;
-					border-top: 5px solid #23261F;
-					background-color: #787878;/*#1B1D18*/							/*ON/OFF*/
-					position: relative;
-					top: 0;	
+					width: 30%;
+					height: auto;
+					margin: 0 0 4% 36.25%;
+					padding-bottom: 2%;
+					/*background-color: #121;							/*ON/OFF*/
+		
 				}
 
 			/*////////////////////////////////"RESPONSIVE GRID -- Layout Backbone*/		
@@ -117,11 +120,11 @@
 									
 			.grid2
 				{
-					width: 80%;
+					width: 92%;
 					height: auto;
 					position: relative;
 					overflow: auto;
-					margin: 4% 2% 0 9.5%;
+					margin:0 2% 0 4.25%;
 					padding: 0.15% 0.15% 2% 0.15%;
 					/*background-color: #321;																											/*ON/OFF*/
 				}	
@@ -136,7 +139,10 @@
 				{
 					
 				}
-
+			.col_2_of_3
+				{
+				
+				}
 
 																			/*GRID OFFSETS*/	
 			#col-top2nd
@@ -148,31 +154,10 @@
 					margin-bottom: 6%;
 				}			
 				
-																			/*FOOT GRID*/
-																			
-			.footGrid
-				{
-					width: 100%;	
-					margin: 1% 1%;			
-				}								
-			.col_1_of_3
-				{
-					width: 34%;	
-					height: auto;	
-					margin: 1%;		
+				
+			/*////////////////////////////////COLORS, OPACITY, and SHADING*/	
 
-				}
-			.col_2_of_3
-				{
-					width: 54%;
-					height: auto;
-					border-left: 1px solid #333;
-					margin: 1% 0 0 0;
-					padding: 2% 2%;
-
-				}										
-
-/*////////////////////////////////FONT and FONT EFFECTS*/
+			/*////////////////////////////////FONT and FONT EFFECTS*/
 			body
 				{
 					font-family: Georgia, serif;	
@@ -203,10 +188,6 @@
 			.grid2 h2
 				{
 			
-				}
-			.grid2 p
-				{
-					display: none;				
 				}
 			/*////////////////////////////////HEADINGS and LISTS SCREEN READERS*/
 			h1 
@@ -253,7 +234,7 @@
 				{
 					width: 100%;
 					margin: 0;
-					padding: 4% 0 2% 0;
+					padding: 4% 0 22% 0;
 					/*display: none;  						  ON/OFF*/
 				}
 			.socialMediaList
@@ -301,35 +282,21 @@
 				{ 
 					-ms-interpolation-mode: bicubic; 
 				}
-			section
-				{
-					width: 100%;	
-					height: auto;	
-					padding: 6.75% 0;		
-					background-image: url('img/OT_blackMirror_half.png');				/*ON/OFF*/
-					background-size: 100% 100%;
-					/*background-repeat: no-repeat;																/*ON/OFF*/
-		
-				}
 			.introLogo
 				{
 					width: 80%;
-					height: auto;
-					margin-top: 2%;
-					position: relative;
-					left: 10%;				
+					height: auto;				
 				}
 			.introGraphic
 				{
 					width: 80%;
 					height: auto;
-					margin:  16% 20% 12.85% 10%;
-					cursor: pointer;			
+					margin:  16% 20% 12.85% 10%;			
 				}
 			.introGraphic img
 				{
 					width: 100%;
-					
+					border-radius: 100%;
 				}
 			.logo
 				{
@@ -352,11 +319,9 @@
 
 			.videoContent
 				{
-					width: 58%;
-					margin-top: 4%;
+					width: 62%;
+					margin: 10% 20%;*/
 					padding:0;
-					position: relative;
-					left: 21%;
 				}
 				
 							/* videoWrapper += iFrame copy-and-pasted from Thierry Koblentz, 2009 http://alistapart.com/article/creating-intrinsic-ratios-for-video */
@@ -366,7 +331,6 @@
 					padding-bottom: 56.25%; /* 16:9 */
 					padding-top: 25px;
 					height: 0;
-					z-index: -1;
 				}
 			.videoWrapper iframe 
 				{
@@ -380,12 +344,11 @@
 			.videoDummie
 				{	
 					width: 100%;
-					height: 425px;	
+					height: 400px;	
 					padding-bottom: 6%;
-					background-color: #48484D;																											/*ON/OFF*/
-					/*display:none;				/*ON/OFF*/
-					position: absolute;
-					z-index: 1;
+					border-bottom: 1px solid #ddd;
+					/*background-color: #111;																											/*ON/OFF*/
+					display:none;				/*ON/OFF*/
 				}
 
 			.videoDummie h2
@@ -412,16 +375,8 @@
 				{
 					width: 100%;
 					z-index: -1;
-				}
-			.footAvatar
-				{
-					width: 60%;		
-					border-radius: 60px;	
 				}	
-				
-				
-					
-/*////////////////////////////////*SCOPABLE DIMENSIONS FOR MEDIA TYPES*/				
+			/*////////////////////////////////*SCOPABLE DIMENSIONS FOR MEDIA TYPES*/				
 				
 			/* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 321px) 
@@ -501,8 +456,8 @@
 		{		
 			width: 100%;
 			height: auto;
-			margin: 0;
-			padding-bottom: ;
+			margin: 0 0 4% 15.5%;
+			padding-bottom: 2%;
 			/*background-color: #121;							/*ON/OFF*/
 		}
 
@@ -549,20 +504,17 @@ only screen and (min-device-pixel-ratio : 1.5) {}
 		<div class="wrapper">
 
 			<div class="mainContent">
-			
-				<div class="contentContainer">				
-					<section>
-					
-					<div class="videoContent">	
+				<div class="contentContainer">
+				
+					<section class="videoContent">
 						<h1>Front Page Video</h1>
-						
 						<div class="videoDummie" id="jqTopSlide">
 							<img src="img/OT_introLogo.png" alt="" class="introLogo"> 
 							
 							<div class="grid1">
 								<div class="grid1_columnOffset_1 col_1_of_2 column">	
 									<div class="introGraphic">	
-										<img src="img/page/OT_stringBand_white3.0.png" alt="">
+										<img src="img/JTG_guit.jpg" alt="">
 									</div>
 								</div>
 								<div class="col_1_of_2 column">	
@@ -582,17 +534,14 @@ only screen and (min-device-pixel-ratio : 1.5) {}
     						<!-- Copy &amp; Pasted from YouTube   webkitallowfullscreen mozallowfullscreen allowfullscreen -->	
 								<iframe width="560" height="315" src="//www.youtube.com/embed/58pRQvIPTnA" frameborder="0" allowfullscreen></iframe>
    						</div>
-   						
-   					</div>
 					</section>
 				</div>
 																														<!--END VIDEO CONTENT-->						
-				<section>
-				<div class="contentContainer">
+				<section class="contentContainer">
 				
-					<!--<div class="logoDiv">
+					<div class="logoDiv">
 						<img src="img/OT_anyone_logo_2.png" alt="logoThrowdown" class="logo">					
-					</div>	-->	
+					</div>		
 						
 					<h1 style="display:none;">Select a List of Oldtime Musicians</h1>	
 					
@@ -639,7 +588,7 @@ only screen and (min-device-pixel-ratio : 1.5) {}
 								</nav>	
 							</div>
 										
-						<!--	<div class="colWidth column col-mid1st">			
+							<div class="colWidth column col-mid1st">			
 								<nav  class="slappers">
 									<img src="img/OT_gutBucket.png" alt="fiddler" class="jq_columnImg4">									
 									<a  href="Users/jgriffin/Desktop/OTanyone/Grid_menu.Page.html" rel="next" class="pageLink1">
@@ -674,60 +623,43 @@ only screen and (min-device-pixel-ratio : 1.5) {}
 									</p>
 								</nav>
 							</div>					
-					</div>					-->
-					
-				</div>	
+					</div>	
 				</section>
-
+			
 				<!--END MAIN GRID-->	
 			
-				<footer class="footMenu">
-							
-					<div class="footGrid section group">
-						<div class="col_1_of_3 column">
-							<img src="/Users/jgriffin/Desktop/OTanyone/img/page/JTG_fanbeltyard.jpeg" alt="Image of Author" class="footAvatar">
-							<address class="contactEmail" id="contact">
-								<a href="mailto: jtgrffn@gmail.com" alt="Terry's Email" target="_blank" role="navigation">
-									jtgrffn@gmail.com
-								</a>				
-							</address>
+			<footer class="footMenu">
+				<h1 style="display:none" class="footHeading">
+					Foot Menu
+				</h1>
+						<div class="socialMediaBar">
+							<div class="socialMediaList">
+										<div class="socialLogoDiv">
+											<a class="facebook" href="" target="_blank">
+												facebook
+											</a>
+										</div>
+										<div class="socialLogoDiv">
+											<a class="pinterest" href="" target="_blank">
+												Pinterest
+											</a>
+										</div>
+										<div class="socialLogoDiv">
+											<a class="reddit" href="" target="_blank">
+												Reddit
+											</a>
+										</div>
+										<div class="socialLogoDiv">
+											<a class="twitter" href="" target="_blank">
+												Twitter
+											</a>	
+										</div>
+							</div>
 						</div>
-								
-						<div class="col_2_of_3 column">
-							
-							<h2>
-								Page Info Goes Here
-							</h2>
-											
-							<div class="socialMediaBar">
-								<div class="socialMediaList">
-											<div class="socialLogoDiv">
-												<a class="facebook" href="" target="_blank">
-													facebook
-												</a>
-											</div>
-											<div class="socialLogoDiv">
-												<a class="pinterest" href="" target="_blank">
-													Pinterest
-												</a>
-											</div>
-											<div class="socialLogoDiv">
-												<a class="reddit" href="" target="_blank">
-													Reddit
-												</a>
-											</div>
-											<div class="socialLogoDiv">
-												<a class="twitter" href="" target="_blank">
-													Twitter
-												</a>	
-											</div>
-								</div>
-							</div>				
-						</div>
-					</div>
-				</footer>	
-			</div>		
-	</div>
+					</footer>
+
+				</div>
+		</div>
 		
 		<!--END MAIN CONTENT-->	
 		<p id="no-script" class="jsDisclaimer">
