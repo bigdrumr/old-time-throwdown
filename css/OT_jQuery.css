@@ -1,0 +1,75 @@
+/*
+	jQuery assignments for CSS style changes
+	OldTimeThrowdown.com
+	by Terry Griffin
+*/
+
+.JQ_column
+	{
+		background-color: #123;
+	}
+.jqTest
+	{
+
+	}
+.toggleButton
+	{
+		display: none;	
+	}
+.warnText
+	{
+		display: none;	
+	}
+.toggleText
+	{
+		font-weight: bold;	
+	}
+.jsDisclaimer
+	{
+		color: #9F5F1B;
+		font-size: 1em;	
+	}
+.jsDisclaimer span
+	{
+		text-decoration: underline;
+	}
+	
+/*///////////////////////////////MUSICIAN MENU PAGE*/
+
+.avatarHover
+	{
+		margin-top: 0;
+	}	
+	
+/*//////////////////////////////JQ_MENU*/	
+	
+.jqMenu 
+	{
+		height: 86px;
+		width: 100%;
+		margin: 0;	
+		z-index: 1;	
+	   position: fixed !important;
+	   opacity: 0.9 !important;
+    	background-color: #192426 !important;
+	   -moz-box-shadow: 0 0 4px 0 black !important;
+    	-webkit-box-shadow: 0 0 4px 0 black !important;
+    	box-shadow: 0 0 4px 0 black !important;
+   		/* -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)" !important;
+    	filter: alpha(opacity=90) !important;*/
+    	-moz-transition: height 0.5s linear !important;
+    	-o-transition: height 0.5s linear !important;
+    	-webkit-transition: height 0.5s linear !important;
+    	transition: height 0.5s linear !important;
+    }		
+	
+
+
+
+
+
+.jqTestDiv
+	{
+		background-color: #123;
+	}	
+	

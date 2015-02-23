@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0" />
+	<title></title>
+	<link rel="stylesheet" href="/Users/jgriffin/Desktop/OTanyone/bundle/OT_jQuery.css" type="text/css" />
+	<style type="text/css">
+	/*
+		BY Terry Griffin
+		Autust 20, 2014
+	*/
+	
+			/*////////////////////////////////"FLAT" BACKBONE -- BACKGROUND DIV ELEMENTS*/	
+			body
+				{
+					padding: 0;
+					margin: 0;
+					background-color: #575744;
+				}	
+			.wrapper
+				{
+					position: relative;
+					width: 100%;
+					height: auto;
+					margin: 0;
+					padding: 0;
+				}
+			header
+				{
+					background-color: #575744;
+					margin: 0;				
+				}
+			.mainMenu
+				{
+					display: none;	*/	
+				}			
+			.headContainer
+				{
+					width: 100%;
+					position: fixed;	
+					padding-bottom: 4%;
+					background-image: url('/Users/jgriffin/Desktop/OTanyone/img/page/OT_strouse_house.jpg');		
+					background-size: 100% auto;
+					background-position: center center;
+				}	
+			.mainContent
+				{
+					overflow: hidden;		
+					position: relative;
+					top: 390px;
+				}
+			.contentContainer
+				{
+					margin: 0;
+					position: relative;
+					border-top: 5px solid #363636;
+					background-image: url('/Users/jgriffin/Desktop/OTanyone/img/page/OT_F-HoleS.png');
+					background-size: 100%;
+					background-position: 0 45%;
+					background-repeat: no-repeat;
+					background-color: #333128;	
+				}
+			.footMenu
+				{
+					width: 100%;
+					height: 300px;
+					margin-top: 0;
+					background-color: #5E3F05;	
+					position: relative;
+					border-top: 5px solid #363636;
+				}
+			/*////////////////////////////////"RESPONSIVE GRID -- CLEARFIX LAYOUT, ELEMENT POSITION, SIZE and MARGINS, and FONT-SIZE*/		
+										
+					/*CLEARFIX GRID LAYOUT*/
+								
+			.section 
+				{
+					clear: both;
+					padding: 0px;
+					margin: 0px;
+				}		
+			.group:before,
+			.group:after 
+				{
+					content:"";
+					display:table;
+				}
+			.group:after 
+				{
+					clear:both;
+				}
+			.group
+				{
+    				zoom:1; /* For IE 6/7  */
+				} 
+			.column 
+				{
+					display: block;
+					float:left;		
+				}
+													/*GRID 1*/
+									
+			.grid1
+				{
+					width: 80%;
+					border-radius: 12px;
+					position: relative;
+					left: 10%;
+				}	
+			.colWidth
+				{
+					width: 33.3%;
+					height: auto;
+					margin: 0;
+					padding: 0;
+					border-radius: 0;
+					background-color:;
+				}
+
+				
+				/*FOOTER GRID*/
+				
+			.footGrid
+				{
+					width: 96%;
+					height: auto;
+					position: relative;
+					border-radius: 18px;
+					overflow: auto;
+					margin: 0;	
+					padding: 2%;	
+			
+				}
+			.footGrid .col_1_of_3
+				{
+					width: 28%;
+					border-right: 1px solid #444;
+				}
+			.footGrid .col_2_of_3
+				{
+					width: 65%;
+					padding: 0 0 0 2%;
+				}
+				
+			/*////////////////////////////////COLORS, OPACITY, and SHADING*/	
+
+			/*////////////////////////////////FONT and FONT EFFECTS*/
+			body
+				{
+					font-family: Georgia, serif;	
+					font-size: 62.5%;							/*SETS ALL FONT TO 10px. Use 'em' to adust size with following: Child Pixels / Parent Pixels = ___em. (for h1 headings, 26px/10px = 2.6em)*/	
+					line-height: 1.5;
+				}
+			p
+				{
+					font-family: Helvetica, sans-serif;
+					color: #F0DCF6;
+				}
+			a 
+				{
+					text-decoration: none;
+					font-weight: bold;
+					color: #F0DCC6;
+				}				
+			.grid1 h2
+				{
+					text-align: center;
+					color: #A5C79B;
+
+			
+				}
+			/*////////////////////////////////HEADINGS and LISTS SCREEN READERS*/
+			h1 
+				{
+					font-size:2.6em;			/* displayed at 26px */
+				}  
+			h2
+				 {
+				 	font-size:2em;	 	/* displayed at 20px */
+				 } 
+			h3 
+				{
+					font-size:1.6em;		/* displayed at 16px */
+				}  
+			h4 
+				{
+					font-size:1.2em;			/* displayed at 12px */
+				}
+				
+			/*////////////////////////////////HYPERLINKS*/
+
+			a
+				{
+					cursor: pointer;				
+				}
+			a:active, a:hover, a:visited, a::after
+				{
+					text-decoration: none;				
+				}
+			.headImage1:active, .headImage1:hover
+				{
+
+					opacity: 0.7;
+				}
+			.headerLogo:active, .headerLogo:hover
+				{
+					opacity: 0.7;
+				}	
+			.navMenu
+				{
+					position: relative;
+					top: -86%;
+					right: 6%;
+					float: right;	
+					display: none;  						  																				/*ON/OFF*/	
+				}			
+			.navLink
+				{
+					list-style-type: none;
+					position: relative;
+					float: left;		
+					padding: 6px;
+				}
+			.contactEmail
+				{
+					margin-left: 10%;				
+				}
+								/*SOCIAL MEDIA LOGO SPRITES*/
+			.socialMediaBar
+				{
+					width: 60%;
+					margin: 1%;
+					position: relative;
+					left: 41%;
+
+				}
+			.socialMediaList
+				{
+					width: auto;
+					height: auto;
+				}		
+			.facebook,.pinterest, .reddit, .twitter
+				{				
+  					color: transparent;
+  					display: block;
+  					float: left;	
+  					font: 0/0 a;
+  					height: 55px;
+  					width: 55px;
+				}	
+			.socialLogoDiv
+				{
+					position: relative;				
+				}	
+			.facebook
+				{
+					background: url("/Users/jgriffin/Desktop/OTanyone/img/logoLinks/FbRdtPrstTwtr_logoSPRITE.png") -2px -2px no-repeat;
+				}
+			.pinterest
+				{
+					background: url("/Users/jgriffin/Desktop/OTanyone/img/logoLinks/FbRdtPrstTwtr_logoSPRITE.png") -56px -2px no-repeat;			
+				}
+			.reddit
+				{
+					background: url("/Users/jgriffin/Desktop/OTanyone/img/logoLinks/FbRdtPrstTwtr_logoSPRITE.png") -110px -2px no-repeat;			
+				}
+			.twitter
+				{
+					background: url("/Users/jgriffin/Desktop/OTanyone/img/logoLinks/FbRdtPrstTwtr_logoSPRITE.png") -164px -2px no-repeat;				
+				}	
+			/*////////////////////////////////VIDEO and IMAGES*/	
+			img 
+				{ 
+					-ms-interpolation-mode: bicubic; 
+				}	
+			/*/////JQUERY SCROLL-DOWN NAV BAR*/
+			.headerLogo
+				{
+					width: 86px;
+					height: auto;
+					margin: 0.5% 1%;
+					border-right: 1px solid #fff;
+					padding-right: 1%;
+					float: left;
+				}
+			.headerLogo img
+				{
+					width: 100%;
+					height: auto;
+					margin-top: 8%;
+				}
+			.pageLink_logo
+				{
+					width: 20%;
+					height: auto;
+					margin: 0.5% 1%;
+					border-right: 1px solid #fff;
+					padding-right: 1%;
+					float: left;
+				}
+			.pageLink_Logo img
+				{
+					width: 10%;
+					height: auto;
+					margin-top: 1.15%;
+
+				}
+			/*/////END SCROLL-DOWN NAV BAR*/
+			
+			.headImage1
+				{
+					width: 10%;	
+					margin: 2% 0 0 44.5%;
+					padding: ;
+					border-radius: 20px;	
+					position: relative;
+				}		
+			.headImage2
+				{
+					width: 30%;	
+					margin:1% 0 1% 35%;
+					padding: 0;	
+					position: relative;
+					opacity:0.7;
+				}	
+			.darkLogo
+				{
+					position: relative;
+					width: 100%;	
+					height: auto;			
+				}
+			.whiteLogo
+				{
+					display: none;
+				}
+			.logo2
+				{
+					position: relative;
+					width: 98%;		
+					height: auto;	
+				}
+			.avatar
+				{			
+					width: 40%;
+					padding: 17% 0;
+					position: relative;
+					left: 30%;	
+					text-align: center;			
+				}
+			.avatar img
+				{
+					width: 100%;	
+					border-radius: 100%;			
+				}
+			.footAvatar
+				{
+					width: 60%;		
+					border-radius: 60px;	
+				}	
+			.videoContent
+				{
+					width: 80%;
+					margin: 0 0 0 6%;
+					padding:0;
+					display: none;				/*ON/OFF*/
+				}
+				
+							/* videoWrapper += iFrame copy-and-pasted from Thierry Koblentz, 2009 http://alistapart.com/article/creating-intrinsic-ratios-for-video */
+			.videoWrapper 
+				{
+					position: relative;
+					padding-bottom: 56.25%; /* 16:9 */
+					padding-top: 25px;
+					height: 0;
+				}
+			.videoWrapper iframe 
+				{
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+				}
+				
+			/*////////////////////////////////*SCOPABLE DIMENSIONS FOR MEDIA TYPES*/				
+				
+			/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) 
+{
+																		/*LAYOUT*/
+		.jqMenu
+			{
+				display: none !important;	
+			}
+		.mainContent
+			{
+				width: 100%;
+				margin: 0;
+				padding: 0;
+				border-top: 4px solid #292720;	
+				top: 89px;			
+			}
+		.contentContainer
+			{
+				width: 100%;
+				margin: 0;
+				padding: 0;			
+			}
+		.headContainer
+			{
+				padding: 2%;
+			}
+			
+																			/*GRID*/
+																			
+		.grid1
+			{
+				width: 100%;
+				background-color: ;
+				border-radius: 12px;
+				padding-left: ;
+			}	
+		.colWidth
+			{
+				width: 48%;
+				height: auto;
+				margin: 1%;
+				padding: 0;
+				border-radius: 0;
+				background-color:;
+			}																		
+																			/*MEDIA*/
+		.headImage1
+			{
+				width: 30%;	
+				margin: 2% 0 0 4%;
+				border-radius: 20px;	
+				position: absolute;
+				
+			}		
+		.headImage2
+			{
+				width: 60%;	
+				margin:0;
+				padding-left: 1%;
+				opacity:0.7;
+				border-left: 1px solid #fff;
+				position: relative;
+				top: 4px;
+				left: 38%;
+			}	
+		.darkLogo
+			{display:none;}
+		.whiteLogo
+			{
+				display: block;	
+				position: relative;
+				width: 100%;	
+				height: auto;				
+			}
+		.logo2
+			{
+				position: relative;
+				width: 90%;		
+				height: auto;	
+			}																			
+		.avatar
+			{
+				width: 87%;		
+				left: 6%;	
+			}															
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {}
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {}
+/* iPads (portrait) -----<!--HEADER-->------ */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {}
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {}
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {}
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {}
+
+	/*END CSS Stylesheet*/
+
+	</style>
+	<script type="text/javascript" src="/Users/jgriffin/Desktop/OTanyone/bundle/scripts/jquery-1.11.1/jquery-1.11.1.js"></script>
+ 	<script type="text/javascript" src="/Users/jgriffin/Desktop/OTanyone/bundle/scripts/jquery-ui-1.11.1.custom/jquery-ui.js"></script>
+ 	<script type="text/javascript" src="/Users/jgriffin/Desktop/OTanyone/bundle/scripts/jquery-ui-1.11.1.custom/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/Users/jgriffin/Desktop/OTanyone/bundle/scripts/OT_jquery_menu.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+
+																											<!--HEADER-->	
+	
+		<header class="mainMenu" id="nav" role="banner">
+			<nav	class="headerLogo">
+				<a href="/Users/jgriffin/Desktop/OTanyone/index.html">	
+					<img src="/Users/jgriffin/Desktop/OTanyone/img/page/OT_Table_logo.png" alt="logo">
+				</a>
+			</nav>				
+			<div	class="pageLink_Logo">
+				<img src="/Users/jgriffin/Desktop/OTanyone/img/page/fiddle_black_LG.png"alt="">
+			</div>
+			<nav class="navMenu">
+				<ul>
+					<li class="navLink"><a href="#contact" target="" role="navigation">tellus</a></li>
+					<li class="navLink"><a href="#contact" target="" role="navigation">about</a></li>
+					<li class="navLink"><a href="#contact" target="" role="navigation">yourself</a></li>				
+				</ul>	
+			</nav>
+		</header>
+		
+																											<!--END HEADER-->			
+		<div class="headContainer" id="second">	
+			<div	class="headImage1">
+				<a href="/Users/jgriffin/Desktop/OTanyone/index.html">	
+					<img src="/Users/jgriffin/Desktop/OTanyone/img/page/OT_Table_logo_2.0.png" alt="logo" class="logo1 darkLogo">		
+				</a>
+			</div>
+			<div	class="headImage1">
+				<a href="/Users/jgriffin/Desktop/OTanyone/index.html">	
+					<img src="/Users/jgriffin/Desktop/OTanyone/img/page/OT_Table_logo.png" alt="logo" class="logo1 whiteLogo">		
+				</a>
+			</div>
+			<div class="headImage2">
+				<img src="/Users/jgriffin/Desktop/OTanyone/img/page/OT_fiddle&bow_white.png" alt="" class="logo2">
+			</div>
+		</div>
+		
+<!--MAIN CONTENT-->			
+		
+		<div class="mainContent">
+			<section class="contentContainer">	
+																											<!--BEGIN MAIN GRID-->	
+				<div class="section group grid1">		
+					<div class="colWidth column" id="jqIcon1">
+						<div class="avatar">	
+							<img src="/Users/jgriffin/Desktop/OTanyone/img/page/OT_banjoFiddle_black.png" alt="" class="jqTestImg1">
+						</div>
+						<a href="fiddlers/template_Musician/OT_anyone_profile.html">	
+							<h2 class="jqAvatarHeading1">
+								Musician Name
+							</h2>
+						</a>
+					</div>
+					<div class="colWidth column" id="jqIcon2">
+						<div class="avatar">	
+							<img src="/Users/jgriffin/Desktop/OTanyone/img/page/OT_banjoFiddle_black.png" alt="" class="jqTestImg2">
+						</div>
+					<a href="fiddlers/template_Musician/OT_anyone_profile.html">	
+						<h2 class="jqAvatarHeading2">
+							Musician Name
+						</h2>
+					</a>
+					</div>					
+					<div class="colWidth column" id="jqIcon3">
+						<div class="avatar">	
+							<img src="/Users/jgriffin/Desktop/OTanyone/img/page/OT_banjoFiddle_black.png" alt="">
+						</div>
+					<a href="fiddlers/template_Musician/OT_anyone_profile.html">	
+						<h2>
+							Musician Name
+						</h2>
+					</a>
+					</div>
+					<div class="colWidth column" id="jqIcon4">
+						<div class="avatar">	
+							<img src="/Users/jgriffin/Desktop/OTanyone/img/page/OT_banjoFiddle_black.png" alt="">
+						</div>
+					<a href="fiddlers/template_Musician/OT_anyone_profile.html">	
+						<h2>
+							Musician Name
+						</h2>
+					</a>
+					</div>
+					<div class="colWidth column"id="jqIcon5">
+						<div class="avatar">	
+							<img src="/Users/jgriffin/Desktop/OTanyone/img/page/OT_banjoFiddle_black.png" alt="">
+						</div>
+					<a href="fiddlers/template_Musician/OT_anyone_profile.html">	
+						<h2>
+							Musician Name
+						</h2>
+					</a>
+					</div>
+					<div class="colWidth column" id="jqIcon6">
+						<div class="avatar">	
+							<img src="/Users/jgriffin/Desktop/OTanyone/img/page/OT_banjoFiddle_black.png" alt="">
+						</div>
+					<a href="fiddlers/template_Musician/OT_anyone_profile.html">	
+						<h2>
+							Musician Name
+						</h2>
+					</a>
+					</div>			
+					<div class="colWidth column" id="jqIcon7">
+						<div class="avatar">	
+							<img src="/Users/jgriffin/Desktop/OTanyone/img/page/OT_banjoFiddle_black.png" alt="">
+						</div>
+					<a href="fiddlers/template_Musician/OT_anyone_profile.html">	
+						<h2>
+							Musician Name
+						</h2>
+					</a>
+					</div>
+					<div class="colWidth column" id="jqIcon8">
+						<div class="avatar">	
+							<img src="/Users/jgriffin/Desktop/OTanyone/img/page/OT_banjoFiddle_black.png" alt="">
+						</div>
+					<a href="fiddlers/template_Musician/OT_anyone_profile.html">	
+						<h2>
+							Musician Name
+						</h2>
+					</a>
+					</div>
+					<div class="colWidth column" id="jqIcon9">
+						<div class="avatar">	
+							<img src="/Users/jgriffin/Desktop/OTanyone/img/page/OT_banjoFiddle_black.png" alt="">
+						</div>
+					<a href="fiddlers/template_Musician/OT_anyone_profile.html">	
+						<h2>
+							Musician Name
+						</h2>
+					</a>
+					</div>
+					<div class="colWidth column" id="jqIcon10">
+						<div class="avatar">	
+							<img src="/Users/jgriffin/Desktop/OTanyone/img/page/OT_banjoFiddle_black.png" alt="">
+						</div>
+					<a href="fiddlers/template_Musician/OT_anyone_profile.html">	
+						<h2>
+							Musician Name
+						</h2>
+					</a>
+					</div>	
+					<div class="colWidth column" id="jqIcon11">
+						<div class="avatar">	
+							<img src="/Users/jgriffin/Desktop/OTanyone/img/page/OT_banjoFiddle_black.png" alt="">
+						</div>
+					<a href="fiddlers/template_Musician/OT_anyone_profile.html">	
+						<h2>
+							Musician Name
+						</h2>
+					</a>
+					</div>
+					<div class="colWidth column" id="jqIcon12">
+						<div class="avatar">	
+							<img src="/Users/jgriffin/Desktop/OTanyone/img/page/OT_banjoFiddle_black.png" alt="">
+						</div>
+					<a href="fiddlers/template_Musician/OT_anyone_profile.html">	
+						<h2>
+							Musician Name
+						</h2>
+					</a>
+					</div>																																		
+				</div>
+																													<!--END MAIN GRID-->	
+			</section>
+		
+	
+	
+		<!--END MAIN CONTENT-->	
+		
+
+		<!--FOOTER-->	
+		
+			<footer class="footMenu" role="contentinfo">
+						<h1 class="footHeading">
+							Foot Menu
+						</h1>
+						<div class="footGrid group">
+							<div class="col_1_of_3 column">
+								<img src="/Users/jgriffin/Desktop/OTanyone/img/page/JTG_fanbeltyard.jpeg" alt="Image of Author" class="footAvatar">
+								<address class="contactEmail" id="contact">
+									<a href="mailto: jtgrffn@gmail.com" alt="Terry's Email" target="_blank" role="navigation">
+										jtgrffn@gmail.com
+									</a>				
+								</address>
+							</div>
+							<div class="col_2_of_3 column">
+								<section>
+									<h2>
+										Page Info Goes Here
+									</h2>	
+								</section>		
+							</div>
+						</div>
+						<div class="socialMediaBar">
+							<div class="socialMediaList">
+										<div class="socialLogoDiv">
+											<a class="facebook" href="" target="_blank">
+												facebook
+											</a>
+										</div>
+										<div class="socialLogoDiv">
+											<a class="pinterest" href="" target="_blank">
+												Pinterest
+											</a>
+										</div>
+										<div class="socialLogoDiv">
+											<a class="reddit" href="" target="_blank">
+												Reddit
+											</a>
+										</div>
+										<div class="socialLogoDiv">
+											<a class="twitter" href="" target="_blank">
+												Twitter
+											</a>	
+										</div>
+							</div>
+						</div>
+					</footer>
+				
+			</div>
+			<!--END FOOTER-->		
+			
+	</div>
+</body>
+</html>

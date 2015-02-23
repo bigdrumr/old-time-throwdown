@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0" />
+	<title></title>
+	<style type="text/css">
+	/*
+		RESPONSIVE WEBPAGE TEMPLATE
+		BY Terry Griffin
+		Autust 20, 2014
+	*/
+	
+			/*////////////////////////////////"FLAT" BACKBONE -- BACKGROUND DIV ELEMENTS*/	
+			body
+				{
+					padding: 0;
+					margin: 0;
+				}	
+			.wrapper
+				{
+					position: relative;;
+					width: 100%;
+					height: 100%;
+					margin: 0;
+					padding: 0;
+				}
+			header
+				{
+					background-color: #333;
+					margin: 0;				
+				}
+			.mainMenu
+				{
+					background-color: #192426;		
+					position: fixed;
+					top: 0;
+					height: 86px;
+					width: 100%;
+					margin: 0;				
+				}				
+
+			.mainContent
+				{
+					position: relative;
+					top: 86px;
+					margin: 0;
+					background-color: #594004;	
+					overflow: auto;			
+				}
+			.contentContainer
+				{
+				
+				}
+			.footMenu
+				{
+					background-color: #A5C79B;				
+				}
+			/*////////////////////////////////"RESPONSIVE GRID -- CLEARFIX LAYOUT, ELEMENT POSITION, SIZE and MARGINS, and FONT-SIZE*/		
+										
+					/*CLEARFIX GRID LAYOUT*/
+								
+			.section 
+				{
+					clear: both;
+					padding: 0px;
+					margin: 0px;
+				}		
+			.group:before,
+			.group:after 
+				{
+					content:"";
+					display:table;
+				}
+			.group:after 
+				{
+					clear:both;
+				}
+			.group
+				{
+    				zoom:1; /* For IE 6/7  */
+				} 
+			.column 
+				{
+					display: block;
+					float:left;		
+				}
+													/*GRID 1*/
+									
+			.grid1
+				{
+					width: 100%;
+					background-color: ;
+					border-radius: 12px;
+					padding-left: ;
+				}	
+			.col_1_of_4
+				{
+					width: 23%;
+					height: auto;
+					margin: 1%;
+					padding: 0;
+					border-radius: 0;
+					background-color:;
+				}
+
+				
+				/*FOOTER GRID*/
+				
+			.footGrid
+				{
+					width: 95.5%;
+					height: auto;
+					position: relative;
+					border-radius: 18px;
+					overflow: auto;
+					margin: 0;	
+					padding: 2%;				
+				}
+			.footGrid .col_1_of_3
+				{
+					width: 28%;
+					border-right: 1px solid #444;
+				}
+			.footGrid .col_2_of_3
+				{
+					width: 65%;
+				}
+				
+			/*////////////////////////////////COLORS, OPACITY, and SHADING*/	
+
+			/*////////////////////////////////FONT and FONT EFFECTS*/
+			body
+				{
+					font-family: Georgia, serif;	
+					font-size: 62.5%;							/*SETS ALL FONT TO 10px. Use 'em' to adust size with following: Child Pixels / Parent Pixels = ___em. (for h1 headings, 26px/10px = 2.6em)*/	
+					line-height: 1.5;
+				}
+			p
+				{
+					font-family: Helvetica, sans-serif;
+					color: #F0DCF6;
+				}
+			a 
+				{
+					text-decoration: none;
+					font-weight: bold;
+					color: #F0DCC6;
+				}				
+			.grid1 h2
+				{
+					text-align: center;
+					color: #A5C79B;				
+				}
+			/*////////////////////////////////HEADINGS and LISTS SCREEN READERS*/
+			h1 
+				{
+					font-size:2.6em;			/* displayed at 26px */
+				}  
+			h2
+				 {
+				 	font-size:2em;	 	/* displayed at 20px */
+				 } 
+			h3 
+				{
+					font-size:1.6em;		/* displayed at 16px */
+				}  
+			h4 
+				{
+					font-size:1.2em;			/* displayed at 12px */
+				}
+				
+			/*////////////////////////////////HYPERLINKS*/
+
+			a
+				{
+					cursor: pointer;				
+				}
+			a:active, a:hover, a:visited, a::after
+				{
+					text-decoration: none;				
+				}
+			.navMenu
+				{
+					position: relative;
+					top: 15%;
+					right: 6%;
+					float: right;		
+				}
+				
+			.navLink
+				{
+					list-style-type: none;
+					position: relative;
+					float: left;		
+					padding: 6px;
+				}
+								/*SOCIAL MEDIA LOGO SPRITES*/
+			.socialMediaBar
+				{
+					width: 80%;
+					padding: 5% 42%;
+					display: none;  						  /*ON/OFF*/
+				}
+			.socialMediaList
+				{
+					width: auto;
+					height: auto;
+				}		
+			.facebook,.pinterest, .reddit, .twitter
+				{				
+  					color: transparent;
+  					display: block;
+  					float: left;	
+  					font: 0/0 a;
+  					height: 55px;
+  					width: 55px;
+				}	
+			.socialLogoDiv
+				{
+					position: relative;
+					margin: 10px 0;				
+				}	
+			.facebook
+				{
+					background: url("logoLinks/FbRdtPrstTwtr_logoSPRITE.png") -2px -2px no-repeat;
+
+				}
+			.pinterest
+				{
+					background: url("logoLinks/FbRdtPrstTwtr_logoSPRITE.png") -56px -2px no-repeat;	
+				
+				}
+			.reddit
+				{
+					background: url("logoLinks/FbRdtPrstTwtr_logoSPRITE.png") -110px -2px no-repeat;	
+		
+				}
+			.twitter
+				{
+					background: url("logoLinks/FbRdtPrstTwtr_logoSPRITE.png") -164px -2px no-repeat;				
+				}	
+			/*////////////////////////////////VIDEO and IMAGES*/	
+			img 
+				{ 
+					-ms-interpolation-mode: bicubic; 
+				}	
+			.headerLogo
+				{
+					width: 86px;
+					height: auto;
+					margin: 0.5% 1%;
+					border-right: 1px solid #fff;
+					padding-right: 1%;
+					float: left;
+				}
+			.headerLogo img
+				{
+					width: 100%;
+					height: auto;
+					margin-top: 8%;
+
+				}
+			.headImage
+				{
+					width: 40%;	
+					margin: 2.5% 0;
+					padding: 0;	
+					position: relative;
+					left: 	42%;	
+				}
+			.headImage img
+				{
+					width: 40%;			
+					margin: 0;	
+				}
+			.avatar
+				{
+					
+					
+					width: 40%;
+					padding: 17% 0;
+					position: relative;
+					left: 30%;	
+					text-align: center;			
+				}
+			.avatar img
+				{
+					width: 100%;	
+					border-radius: 100%;			
+				}
+			.videoContent
+				{
+					width: 80%;
+					margin: 0 0 0 6%;
+					padding:0;
+					display: none;				/*ON/OFF*/
+				}
+				
+							/* videoWrapper += iFrame copy-and-pasted from Thierry Koblentz, 2009 http://alistapart.com/article/creating-intrinsic-ratios-for-video */
+			.videoWrapper 
+				{
+					position: relative;
+					padding-bottom: 56.25%; /* 16:9 */
+					padding-top: 25px;
+					height: 0;
+				}
+			.videoWrapper iframe 
+				{
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+				}
+				
+			/*////////////////////////////////*SCOPABLE DIMENSIONS FOR MEDIA TYPES*/				
+				
+			/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) 
+{
+
+}
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {}
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {}
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {}
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {}
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {}
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {}
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {}
+
+	/*END CSS Stylesheet*/
+
+	</style>
+	<script type="text/javascript" src="jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="/jquery-ui-1.11.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="all-responsive_script.js"></script>
+</head>
+<body>
+
+																				<!--HEADER-->	
+	<div class="wrapper">
+		<header class="mainMenu" role="banner">
+			<div	class="headerLogo">
+				<img src="img/OT_Table_logo.png" alt="logo">
+			</div>
+			<nav class="navMenu">
+				<ul>
+					<li class="navLink"><a href="#contact" target="" role="navigation">tellus</a></li>
+					<li class="navLink"><a href="#contact" target="" role="navigation">about</a></li>
+					<li class="navLink"><a href="#contact" target="" role="navigation">yourself</a></li>				
+				</ul>	
+			</nav>
+		</header>
+		
+																			<!--END HEADER-->			
+		
+		<!--MAIN CONTENT-->	
+	
+
+		<div class="mainContent">
+			<section class="contentContainer">	
+				<div	class="headImage">
+					<img src="img/OT_fiddle&bow_white.png" alt="">
+				</div>		
+																											<!--BEGIN MAIN GRID-->	
+				<div class="section group grid1">		
+					<div class="col_1_of_4 column">
+						<div class="avatar">	
+							<img src="img/OT_banjoFiddle_black.png" alt="">
+						</div>
+					<a href="Musicians/OT_anyone_profile.html">	
+						<h2>
+							Musician Name
+						</h2>
+					</a>
+					</div>
+					<div class="col_1_of_4 column">
+						<div class="avatar">	
+							<img src="img/OT_banjoFiddle_black.png" alt="">
+						</div>
+					<a href="Musicians/OT_anyone_profile.html">	
+						<h2>
+							Musician Name
+						</h2>
+					</a>
+					</div>					
+					<div class="col_1_of_4 column">
+						<div class="avatar">	
+							<img src="img/OT_banjoFiddle_black.png" alt="">
+						</div>
+					<a href="Musicians/OT_anyone_profile.html">	
+						<h2>
+							Musician Name
+						</h2>
+					</a>
+					</div>
+					<div class="col_1_of_4 column">
+						<div class="avatar">	
+							<img src="img/OT_banjoFiddle_black.png" alt="">
+						</div>
+					<a href="Musicians/OT_anyone_profile.html">	
+						<h2>
+							Musician Name
+						</h2>
+					</a>
+					</div>
+					<div class="col_1_of_4 column">
+						<div class="avatar">	
+							<img src="img/OT_banjoFiddle_black.png" alt="">
+						</div>
+					<a href="Musicians/OT_anyone_profile.html">	
+						<h2>
+							Musician Name
+						</h2>
+					</a>
+					</div>
+					<div class="col_1_of_4 column">
+						<div class="avatar">	
+							<img src="img/OT_banjoFiddle_black.png" alt="">
+						</div>
+					<a href="Musicians/OT_anyone_profile.html">	
+						<h2>
+							Musician Name
+						</h2>
+					</a>
+					</div>			
+					<div class="col_1_of_4 column">
+						<div class="avatar">	
+							<img src="img/OT_banjoFiddle_black.png" alt="">
+						</div>
+					<a href="Musicians/OT_anyone_profile.html">	
+						<h2>
+							Musician Name
+						</h2>
+					</a>
+					</div>
+					<div class="col_1_of_4 column">
+						<div class="avatar">	
+							<img src="img/OT_banjoFiddle_black.png" alt="">
+						</div>
+					<a href="Musicians/OT_anyone_profile.html">	
+						<h2>
+							Musician Name
+						</h2>
+					</a>
+					</div>
+					<div class="col_1_of_4 column">
+						<div class="avatar">	
+							<img src="img/OT_banjoFiddle_black.png" alt="">
+						</div>
+					<a href="Musicians/OT_anyone_profile.html">	
+						<h2>
+							Musician Name
+						</h2>
+					</a>
+					</div>
+					<div class="col_1_of_4 column">
+						<div class="avatar">	
+							<img src="img/OT_banjoFiddle_black.png" alt="">
+						</div>
+					<a href="Musicians/OT_anyone_profile.html">	
+						<h2>
+							Musician Name
+						</h2>
+					</a>
+					</div>	
+					<div class="col_1_of_4 column">
+						<div class="avatar">	
+							<img src="img/OT_banjoFiddle_black.png" alt="">
+						</div>
+					<a href="Musicians/OT_anyone_profile.html">	
+						<h2>
+							Musician Name
+						</h2>
+					</a>
+					</div>
+					<div class="col_1_of_4 column">
+						<div class="avatar">	
+							<img src="img/OT_banjoFiddle_black.png" alt="">
+						</div>
+					<a href="Musicians/OT_anyone_profile.html">	
+						<h2>
+							Musician Name
+						</h2>
+					</a>
+					</div>																																		
+				</div>
+																													<!--END MAIN GRID-->	
+			</section>
+		</div>
+	</div>
+	
+		<!--END MAIN CONTENT-->	
+		
+		<!--GRID COLUMN-->
+		
+
+				
+		<!--END GRID COLUMN-->	
+		
+		<!--YOUTUBE iFRAME-->		
+
+			<div class="">
+				<section class="videoContent">
+					<div class="videoWrapper">
+    					<!-- Copy & Pasted from YouTube   webkitallowfullscreen mozallowfullscreen allowfullscreen -->	
+						<iframe width="420" height="315" src="//www.youtube.com/embed/XDZ9PN5K06Q" frameborder="0" allowfullscreen></iframe>
+   					</div>
+				</section>
+			</div>
+
+		<!--END YOUTUBE iFRAME-->	
+
+		<!--FOOTER-->	
+		
+			<div class="footMenu" role="contentinfo">
+				<footer class="">
+						<h1 class="footHeading">
+							Foot Menu
+						</h1>
+						<div class="footGrid group">
+							<div class="col_1_of_3 column">
+								<img src="img/JTG_fanbeltyard.jpeg" alt="Image of Author" class="footAvatar">
+								<address class="contactEmail" id="contact">
+									<a href="mailto: jtgrffn@gmail.com" alt="Terry's Email" target="_blank" role="navigation">
+										jtgrffn@gmail.com
+									</a>				
+								</address>
+							</div>
+							<div class="col_2_of_3 column">
+								<section>
+									<h2>
+										Page Info Goes Here
+									</h2>	
+								</section>		
+							</div>
+						</div>
+						<div class="socialMediaBar">
+							<div class="socialMediaList">
+										<div class="socialLogoDiv">
+											<a class="facebook" href="" target="_blank">
+												facebook
+											</a>
+										</div>
+										<div class="socialLogoDiv">
+											<a class="pinterest" href="" target="_blank">
+												Pinterest
+											</a>
+										</div>
+										<div class="socialLogoDiv">
+											<a class="reddit" href="" target="_blank">
+												Reddit
+											</a>
+										</div>
+										<div class="socialLogoDiv">
+											<a class="twitter" href="" target="_blank">
+												Twitter
+											</a>	
+										</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+	
+			<!--END FOOTER-->		
+	
+</body>
+</html>

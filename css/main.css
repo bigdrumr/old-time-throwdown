@@ -1,0 +1,125 @@
+			/*////////////////////////////////"FLAT" SKIN -- BACKGROUND DIV ELEMENTS*/	
+			body
+				{
+					background-color: #48484D; /*#A4A971*/
+					background-image: url('/Users/jgriffin/Desktop/gitRepo/OTanyone/img/blackMirror_frame_inverted.png');
+					background-size: 100%;
+					background-repeat: no-repeat;
+					padding: 0;
+					margin: 0;	
+					font-family: Georgia, serif;	
+					line-height: 1.5;
+				}	
+			.body-padding {
+				padding-top: 300px;
+			}
+			.logoDiv
+				{
+					width: 79%;	
+					margin-top: 4%;	
+					margin-bottom: 4%;		
+				}
+
+			.item {
+				width: 70%;
+				height: 475px;
+			}
+
+			.footMenu
+				{		
+					width: 30%;
+					height: auto;
+					margin: 0 0 4% 36.25%;
+					padding-bottom: 2%;		
+				}
+		
+			/*////////////////////////////////FONT and FONT EFFECTS*/
+
+			p
+				{
+					font-family: Helvetica, sans-serif;
+					color: #F0DCF6;
+					font-size: 18px;
+					text-align: center;
+				}
+			a 
+				{
+					text-decoration: none;
+					font-weight: bold;
+					color: #F0DCC6;
+				}	
+			.item a
+				{
+					color: #F0DCCC;
+					text-align: center;
+					font-size: 24px;
+					line-height: 1.2;
+					text-decoration: none;
+				}		
+			.intro-text 
+				{
+					margin-top: 40px;
+				}
+		
+			/*////////////////////////////////VIDEO and IMAGES*/	
+			img 
+				{ 
+					width: 100%;
+					-ms-interpolation-mode: bicubic; 
+				}
+			.item img {
+				margin-bottom: 20px;
+			}
+			.introLogo
+				{
+					width: 80%;
+					height: auto;				
+				}
+			.introGraphic
+				{
+					width: 80%;
+					height: auto;
+					margin:  16% 20% 12.85% 10%;			
+				}
+			.introGraphic img
+				{
+					width: 100%;
+				}
+			.logo
+				{
+					width: 80%;		
+					position: relative;
+					left: 24%;	
+					padding: 0;
+					margin-top: ;	
+				}
+				
+			.video-curtain
+				{	
+					width: 96%;
+					height: 380px;	
+					padding-bottom: 6%;
+					background-color: #48484D;																											/*ON/OFF*/
+					position: absolute;
+					z-index: 1;
+				}
+			.video-curtain h2
+				{
+					font-family: "Helvetica", sans-serif;
+					font-weight: bold;
+					font-size: 2em;
+					text-align: center;
+					color: #bbb;	
+				}
+			.video-curtain p
+				{
+					font-family: "Baskerville", serif;
+					font-weight: ;
+					font-size: 20px;
+					color: #F0DCF6;	
+					text-align: right;	
+					position: relative;
+					top:;	
+				}
+							/*END of VIDEOWRAPPER*/
+							

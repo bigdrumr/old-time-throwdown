@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0" />
+	<title>Old Time Throwdown</title>
+	<link rel="stylesheet" href="bundle/OT_jQuery.css" type="text/css" />
+	<style type="text/css">
+	/*
+		CSS STYLESHEET FOR OldTimeThrowdown.Com
+		BY Terry Griffin
+		Autust 20, 2014
+	*/
+	
+			/*////////////////////////////////"FLAT" SKIN -- BACKGROUND DIV ELEMENTS*/	
+			body
+				{
+					background-color: #48484D; /*#A4A971*/
+					background-image: url('img/OT_blackMirror_half.png');			/*ON/OFF*/
+					background-size: 100%;
+					background-repeat: no-repeat;
+					width: 100%;
+					padding: 0;
+					margin: 0;		
+				}	
+			.wrapper
+				{
+					width: 100%;
+					margin: 0;
+					padding: 0;
+				}
+			.mainContent
+				{
+					width: 90%;
+					margin: 12% 0% 4% 8.5%;
+					float: left;
+					overflow: hidden;
+				}
+			.contentContainer
+				{
+					width: 90%;
+					/*background-color: #fff;
+					opacity: 0.4;*/
+					position: relative;
+					overflow: hidden;						
+				}
+			.logoDiv
+				{
+					width: 79%;		
+					margin-bottom: 4%;		
+				}	
+			.footMenu
+				{		
+					width: 30%;
+					height: auto;
+					margin: 0 0 4% 36.25%;
+					padding-bottom: 2%;
+					/*background-color: #121;							/*ON/OFF*/
+		
+				}
+
+			/*////////////////////////////////"RESPONSIVE GRID -- Layout Backbone*/		
+										
+					/*CLEARFIX GRID LAYOUT*/
+			.section 
+				{
+					clear: both;
+					padding: 0px;
+					margin: 0px;
+				}															
+									
+			.group:before,
+			.group:after 
+				{
+					content:"";
+					display:table;
+				}
+			.group:after 
+				{
+					clear:both;
+				}
+			.group
+				{
+    				zoom:1; /* For IE 6/7 */
+				}
+			.column 
+				{
+					display: block;
+					float:left;	
+					/*background-color: #121;																											/*ON/OFF*/
+				}
+			
+													/*GRID 1*/
+			.grid1
+				{
+					width: 100%;	
+					height: auto;
+					margin-top: 4%;
+					position: relative;	
+				}		
+			.col_1_of_2:last-child
+				{
+					width: 50%;
+					padding: 2% 4% 2% 4%;
+				}											
+			.col_1_of_2
+				{
+					width: 42%;
+					height: auto;
+					margin: ;
+					padding: ;
+					position: relative;
+					/*background-color: #333;																											/*ON/OFF*/
+				}
+									
+													
+													
+												
+													/*GRID 2*/
+									
+			.grid2
+				{
+					width: 92%;
+					height: auto;
+					position: relative;
+					overflow: auto;
+					margin:0 2% 0 4.25%;
+					padding: 0.15% 0.15% 2% 0.15%;
+					/*background-color: #321;																											/*ON/OFF*/
+				}	
+			.colWidth
+				{
+					width: 22%;	
+					height: auto;
+					margin: 2% 3.65% 0 3.65%;
+					padding: 2% 2% 2% 2%;
+				}
+			.colWidth:last-child	
+				{
+					
+				}
+			.col_2_of_3
+				{
+				
+				}
+
+																			/*GRID OFFSETS*/	
+			#col-top2nd
+				{
+				
+				}																			
+			.col-top3rd
+				{
+					margin-bottom: 6%;
+				}			
+				
+				
+			/*////////////////////////////////COLORS, OPACITY, and SHADING*/	
+
+			/*////////////////////////////////FONT and FONT EFFECTS*/
+			body
+				{
+					font-family: Georgia, serif;	
+					font-size: 62.5%;							/*SETS ALL FONT TO 10px. Use 'em' to adust size with following: Child Pixels / Parent Pixels = ___em. (for h1 headings, 26px/10px = 2.6em)*/	
+					line-height: 1.5;
+				}
+			p
+				{
+					font-family: Helvetica, sans-serif;
+					color: #F0DCF6;
+					font-size: 1.8em;
+					text-align: center;
+				}
+			a 
+				{
+					text-decoration: none;
+					font-weight: bold;
+					color: #F0DCC6;
+				}	
+			.grid2 a
+				{
+					color: #F0DCCC;
+					text-align: center;
+					font-size: 4em;
+					line-height: 1;
+					di
+				}		
+			.grid2 h2
+				{
+			
+				}
+			/*////////////////////////////////HEADINGS and LISTS SCREEN READERS*/
+			h1 
+				{
+					font-size:2.6em;			/* displayed at 26px */
+				}  
+			h2
+				 {
+				 	font-size:2em;	 	/* displayed at 20px */
+				 } 
+			h3 
+				{
+					font-size:1.6em;		/* displayed at 16px */
+				}  
+			h4 
+				{
+					font-size:1.2em;			/* displayed at 12px */
+				}
+			section h1
+				{
+					display: none;				
+				}
+				
+			/*////////////////////////////////HYPERLINKS*/
+			
+			.pageLink1
+				{
+						width: auto;
+				}
+			.pageLink1 span
+				{
+					cursor: pointer;
+					display: block;
+					padding-top: 8%;	
+				}
+			.pageLink1:link, .pageLink1:hover
+				{
+					/*color: #A2A2A2;*/				
+				}
+
+			
+								/*SOCIAL MEDIA LOGO SPRITES*/
+			.socialMediaBar
+				{
+					width: 100%;
+					margin: 0;
+					padding: 4% 0 22% 0;
+					/*display: none;  						  ON/OFF*/
+				}
+			.socialMediaList
+				{
+					width: auto;
+					height: auto;
+				}		
+			.facebook,.pinterest, .reddit, .twitter
+				{				
+  					color: transparent;
+  					display: block;
+  					float: left;	
+  					font: 0/0 a;
+  					height: 55px;
+  					width: 55px;
+				}	
+			.socialLogoDiv
+				{
+					position: relative;
+					margin: 10px 0;				
+				}	
+			.facebook
+				{
+					background: url("img/logoLinks/FbRdtPrstTwtr_logoSPRITE.png") -2px -2px no-repeat;
+
+				}
+			.pinterest
+				{
+					background: url("img/logoLinks/FbRdtPrstTwtr_logoSPRITE.png") -56px -2px no-repeat;	
+				
+				}
+			.reddit
+				{
+					background: url("img/logoLinks/FbRdtPrstTwtr_logoSPRITE.png") -110px -2px no-repeat;	
+		
+				}
+			.twitter
+				{
+					background: url("img/logoLinks/FbRdtPrstTwtr_logoSPRITE.png") -164px -2px no-repeat;				
+				}	
+				
+				
+			/*////////////////////////////////VIDEO and IMAGES*/	
+			img 
+				{ 
+					-ms-interpolation-mode: bicubic; 
+				}
+			.introLogo
+				{
+					width: 80%;
+					height: auto;				
+				}
+			.introGraphic
+				{
+					width: 80%;
+					height: auto;
+					margin:  16% 20% 12.85% 10%;			
+				}
+			.introGraphic img
+				{
+					width: 100%;
+					border-radius: 100%;
+				}
+			.logo
+				{
+					width: 80%;		
+					position: relative;
+					left: 24%;	
+					padding: 0;
+					margin-top: ;	
+				}
+			.grid2 img
+				{
+					width: 100%;	
+					border-radius:100%;	
+					margin: 0;	
+					position: relative;
+					left: ;	
+					padding: 1%;
+					/*background-color: #ff1;							/*ON/OFF*/
+				}
+
+			.videoContent
+				{
+					width: 62%;
+					margin: 10% 20%;*/
+					padding:0;
+				}
+				
+							/* videoWrapper += iFrame copy-and-pasted from Thierry Koblentz, 2009 http://alistapart.com/article/creating-intrinsic-ratios-for-video */
+			.videoWrapper 
+				{
+					position: relative;
+					padding-bottom: 56.25%; /* 16:9 */
+					padding-top: 25px;
+					height: 0;
+				}
+			.videoWrapper iframe 
+				{
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					/*display:none;			/*ON/OFF*/
+				}
+			.videoDummie
+				{	
+					width: 100%;
+					height: 400px;	
+					padding-bottom: 6%;
+					border-bottom: 1px solid #ddd;
+					/*background-color: #111;																											/*ON/OFF*/
+					display:none;				/*ON/OFF*/
+				}
+
+			.videoDummie h2
+				{
+					font-family: "Helvetica", sans-serif;
+					font-weight: bold;
+					font-size: 2em;
+					text-align: center;
+					color: #bbb;	
+				}
+			.videoDummie p
+				{
+					font-family: "Baskerville", serif;
+					font-weight: ;
+					font-size: 2.2em;
+					color: #F0DCF6;	
+					text-align: right;	
+					position: relative;
+					top:;	
+				}
+							/*END of VIDEOWRAPPER*/
+							
+			.backgroundImage img
+				{
+					width: 100%;
+					z-index: -1;
+				}	
+			/*////////////////////////////////*SCOPABLE DIMENSIONS FOR MEDIA TYPES*/				
+				
+			/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) 
+{
+
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) 
+{
+	body
+		{
+			background-image: url('img/OT_Table_logo.png');
+			background-repeat: no-repeat;
+			background-size: 26%;
+			background-position: 50% 1.5%;
+		}
+	.mainContent
+		{
+			margin: 0;
+			width: 100%;
+		}
+	.contentContainer
+		{
+			width: 100%;
+			/*background-color: #123;*/
+			margin-top: 6%;
+			padding: 0;
+		}
+	.videoContent
+		{
+			width: 96%;
+			margin: 20% 1% 0 1%;		
+			position: relative;
+			left: 1%;
+		}
+														/*MEDIA AND IMAGES*/
+	.logoDiv
+		{
+			width: 85%;	
+			padding: 0;
+			
+				
+		}
+	.logo
+		{
+			width: 80%;
+			height: 36px;		
+			position: relative;
+			left: 18%;	
+
+		}
+														/*FONTS*/
+	p
+		{
+			display: none;		
+		}
+	.grid2 a
+		{
+			font-size: 1.7em;
+		}
+														/*GRID*/
+	.grid2
+		{
+			width: 98%;
+			margin:1%;
+			padding:;
+			/*background-color: #321;							/*ON/OFF*/
+		}	
+	.colWidth
+		{
+			width: 38.5%;	
+			height: auto;
+			margin: 2% 3.65% 0 3.65%;
+			padding: 2% 2% 2% 2%;
+		}
+	.footMenu
+		{		
+			width: 100%;
+			height: auto;
+			margin: 0 0 4% 15.5%;
+			padding-bottom: 2%;
+			/*background-color: #121;							/*ON/OFF*/
+		}
+
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {}
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {}
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {}
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {}
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {}
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {}
+
+	/*END CSS Stylesheet*/
+
+	</style>
+	<script type="text/javascript" src="/Users/jgriffin/Desktop/OTanyone/bundle/scripts/jquery-1.11.1/jquery-1.11.1.js"></script>
+ 	<script type="text/javascript" src="/Users/jgriffin/Desktop/OTanyone/bundle/scripts/jquery-ui-1.11.1.custom/jquery-ui.js"></script>
+ 	<script type="text/javascript" src="/Users/jgriffin/Desktop/OTanyone/bundle/scripts/jquery-ui-1.11.1.custom/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/Users/jgriffin/Desktop/OTanyone/bundle/scripts/OT_jquery.js"></script>
+</head>
+<body>
+
+		<!--MAIN CONTENT-->
+		
+		
+
+		<div class="wrapper">
+
+			<div class="mainContent">
+				<div class="contentContainer">
+				
+					<section class="videoContent">
+						<h1>Front Page Video</h1>
+						<div class="videoDummie" id="jqTopSlide">
+							<img src="img/OT_introLogo.png" alt="" class="introLogo"> 
+							
+							<div class="grid1">
+								<div class="grid1_columnOffset_1 col_1_of_2 column">	
+									<div class="introGraphic">	
+										<img src="img/JTG_guit.jpg" alt="">
+									</div>
+								</div>
+								<div class="col_1_of_2 column">	
+									<div class="introText">	
+										<p>
+											I love an old time country throwdown. I've put this project together for those who do, too. 
+											Anyone who visits this page can discover
+											individuals that're live and active in traditions of old time music and dance today.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+																														<!--VIDEO CONTENT-->
+						<div class="videoWrapper">
+    						<!-- Copy &amp; Pasted from YouTube   webkitallowfullscreen mozallowfullscreen allowfullscreen -->	
+								<iframe width="560" height="315" src="//www.youtube.com/embed/58pRQvIPTnA" frameborder="0" allowfullscreen></iframe>
+   						</div>
+					</section>
+				</div>
+																														<!--END VIDEO CONTENT-->						
+				<section class="contentContainer">
+				
+					<div class="logoDiv">
+						<img src="img/OT_anyone_logo_2.png" alt="logoThrowdown" class="logo">					
+					</div>		
+						
+					<h1 style="display:none;">Select a List of Oldtime Musicians</h1>	
+					
+						<!--BEGIN MAIN GRID-->					
+						<!-- 
+							THIS GRID ASSIGNS UNIQUE CLASSES FOR INDIVIDUALIZED OFFSETS TO EACH COLUMN IN THE STACK. 
+							EACH COLUMN VARIES IN LENGTH BECAUSE OF ITS TEXT CONTENT. 
+						-->
+						<div class="grid2 section group">
+						
+							<div class="colWidth column col-top1st jq_column1">			
+								<nav  class="fiddlers">
+									<img src="img/OT_machShields_web2.0.png" alt="fiddler" class="jq_columnImg1">
+									<a class="pageLink1" href="/Users/jgriffin/Desktop/OTanyone/pages/Musicians/menu_fiddlers.html" class="pageLink1">
+										<span class="mainPageLink1" >Fiddlers</span>
+									</a>
+									<p>
+										Somewhere across the country, world, and ages, there's an oldtime country fiddler throwing down hard. Here's just a few who are live and active today. 									
+									</p>
+								</nav>
+							</div>	
+							
+							<div class="colWidth column col-top2nd">	
+								<nav class="stringBands">
+									<img src="img/OT_FivePointsRounders_WEB2.0.png" alt="stringBand" class="jq_columnImg2">						
+									<a href="/Users/jgriffin/Desktop/OTanyone/pages/Musicians/menu_stringBands.html" class="pageLink1">	
+										<span class="mainPageLink2" >String Bands</span>
+									</a>			
+									<p>
+										Put an oldtime stringband together, form a pocket, and communicate with the other side of the heart and soul. 
+									</p>	
+								</nav>
+							</div>
+							
+							<div class="colWidth column hannahT col-top3rd">										
+								<nav class="pickers">	
+									<img src="img/OT_clifHicks_1_Avatar.png" alt="banjoPicker" class="jq_columnImg3">
+									<a href="/Users/jgriffin/Desktop/OTanyone/pages/Musicians/menu_pickers.html" class="pageLink1">
+										<span class="mainPageLink3" >Pickers</span>
+									</a>	
+									<p>
+										Buck, sway, and hold on! Here's a few oldtime string pickers who'd keep you on your feet as you run downhill. 									
+									</p>
+								</nav>	
+							</div>
+										
+							<div class="colWidth column col-mid1st">			
+								<nav  class="slappers">
+									<img src="img/OT_gutBucket.png" alt="fiddler" class="jq_columnImg4">									
+									<a  href="Users/jgriffin/Desktop/OTanyone/Grid_menu.Page.html" rel="next" class="pageLink1">
+										<span class="mainPageLink4" >Bass Slappers</span>
+									</a>				
+									<p>
+										One string or four strings, if there's thump, there's a hot dance ready to form. 
+									</p>
+								</nav>
+							</div>											
+										
+							<div class="colWidth column col-mid2nd">			
+								<nav  class="buckers">
+									<img src="img/OT_appleChillCloggers_WEB2.0.png" alt="fiddler" class="jq_columnImg5">									
+									<a  href="Users/jgriffin/Desktop/OTanyone/Grid_menu.Page.html" rel="next" class="pageLink1">
+										<span class="mainPageLink5" >Buckers</span>
+									</a>				
+									<p>
+										Somewhere across the country, the world, and many an age, there's an oldtime country fiddler throwing down hard. Here's just a few who are live and active today. 									
+									</p>
+								</nav>
+							</div>	
+												
+							<div class="colWidth column col-mid3rd">			
+								<nav  class="callers">
+									<img src="img/OT_machShields_web2.0.png" alt="fiddler" class="jq_columnImg6">									
+									<a  href="Users/jgriffin/Desktop/OTanyone/Grid_menu.Page.html" rel="next" class="pageLink1">
+										<span class="mainPageLink6" >Callers</span>
+									</a>				
+									<p>
+										Somewhere across the country, the world, and many an age, there's an oldtime country fiddler throwing down hard. Here's just a few who are live and active today. 									
+									</p>
+								</nav>
+							</div>					
+					</div>	
+				</section>
+			
+				<!--END MAIN GRID-->	
+			
+			<footer class="footMenu">
+				<h1 style="display:none" class="footHeading">
+					Foot Menu
+				</h1>
+						<div class="socialMediaBar">
+							<div class="socialMediaList">
+										<div class="socialLogoDiv">
+											<a class="facebook" href="" target="_blank">
+												facebook
+											</a>
+										</div>
+										<div class="socialLogoDiv">
+											<a class="pinterest" href="" target="_blank">
+												Pinterest
+											</a>
+										</div>
+										<div class="socialLogoDiv">
+											<a class="reddit" href="" target="_blank">
+												Reddit
+											</a>
+										</div>
+										<div class="socialLogoDiv">
+											<a class="twitter" href="" target="_blank">
+												Twitter
+											</a>	
+										</div>
+							</div>
+						</div>
+					</footer>
+
+				</div>
+		</div>
+		
+		<!--END MAIN CONTENT-->	
+		<p id="no-script" class="jsDisclaimer">
+							{{ Although this page works well without Javascript, <br>
+							its function is greatly enhanced if Javascript is enabled. <br>
+							Search on the web "Enable/Disable Javascript for <span>(browser)</span>" }}
+		</p>
+
+
+</body>
+</html>

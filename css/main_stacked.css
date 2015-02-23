@@ -1,0 +1,469 @@
+/*
+	STYLESHEET FOR OldTimeThrowdown.Com
+	BY Terry Griffin
+	Autust 20, 2014
+*/
+	
+			/*////////////////////////////////"FLAT" SKIN -- BACKGROUND DIV ELEMENTS*/	
+			body
+				{
+					background-color: #48484D; /*#A4A971*/
+					background-image: url('/Users/jgriffin/Desktop/gitRepo/OTanyone/img/blackMirror_frame_inverted.png');			/*ON/OFF*/
+					background-size: 100%;
+					background-repeat: no-repeat;
+					width: 100%;
+					padding: 0;
+					margin: 0;		
+				}	
+			.wrapper
+				{
+					width: 100%;
+					margin: 0;
+					padding: 0;
+				}
+			.mainContent
+				{
+					width: 100%;
+					margin: 0;
+					float: left;
+					overflow: hidden;
+				}
+			.contentContainer
+				{
+					width: 100%;
+					/*background-color: #fff;
+					opacity: 0.4;*/		
+					position: relative;
+					overflow:;						
+				}
+			.logoDiv
+				{
+					width: 79%;		
+					margin-bottom: 4%;		
+				}	
+			.footMenu
+				{		
+					width: 100%;
+					height: 260px;
+					margin-top: 1%;
+					border-top: 5px solid #23261F;
+					background-color: #787878;/*#1B1D18*/							/*ON/OFF*/
+					position: relative;
+					top: 0;	
+				}
+
+			/*////////////////////////////////"RESPONSIVE GRID -- Layout Backbone*/		
+										
+					/*CLEARFIX GRID LAYOUT*/
+			.section 
+				{
+					clear: both;
+					padding: 0px;
+					margin: 0px;
+				}															
+									
+			.group:before,
+			.group:after 
+				{
+					content:"";
+					display:table;
+				}
+			.group:after 
+				{
+					clear:both;
+				}
+			.group
+				{
+    				zoom:1; /* For IE 6/7 */
+				}
+			.column 
+				{
+					display: block;
+					float:left;	
+					/*background-color: #121;																											/*ON/OFF*/
+				}
+			
+													/*GRID 1*/
+			.grid1
+				{
+					width: 100%;	
+					height: auto;
+					margin-top: 4%;
+					position: relative;	
+				}		
+			.col_1_of_2:last-child
+				{
+					width: 50%;
+					padding: 2% 4% 2% 4%;
+				}											
+			.col_1_of_2
+				{
+					width: 42%;
+					height: auto;
+					margin: ;
+					padding: ;
+					position: relative;
+					/*background-color: #333;																											/*ON/OFF*/
+				}
+									
+													
+													
+												
+													/*GRID 2*/
+									
+			.grid2
+				{
+					width: 80%;
+					height: auto;
+					position: relative;
+					overflow: auto;
+					margin: 4% 2% 0 9.5%;
+					padding: 0.15% 0.15% 2% 0.15%;
+					/*background-color: #321;																											/*ON/OFF*/
+				}	
+			.colWidth
+				{
+					width: 22%;	
+					height: auto;
+					margin: 2% 3.65% 0 3.65%;
+					padding: 2% 2% 2% 2%;
+				}
+			.colWidth:last-child	
+				{
+					
+				}
+
+
+																			/*GRID OFFSETS*/	
+			#col-top2nd
+				{
+				
+				}																			
+			.col-top3rd
+				{
+					margin-bottom: 6%;
+				}			
+				
+																			/*FOOT GRID*/
+																			
+			.footGrid
+				{
+					width: 100%;	
+					margin: 1% 1%;			
+				}								
+			.col_1_of_3
+				{
+					width: 34%;	
+					height: auto;	
+					margin: 1%;		
+
+				}
+			.col_2_of_3
+				{
+					width: 54%;
+					height: auto;
+					border-left: 1px solid #333;
+					margin: 1% 0 0 0;
+					padding: 2% 2%;
+
+				}										
+
+			/*////////////////////////////////FONT and FONT EFFECTS*/
+			body
+				{
+					font-family: Georgia, serif;	
+					font-size: 62.5%;							/*SETS ALL FONT TO 10px. Use 'em' to adust size with following: Child Pixels / Parent Pixels = ___em. (for h1 headings, 26px/10px = 2.6em)*/	
+					line-height: 1.5;
+				}
+			p
+				{
+					font-family: Helvetica, sans-serif;
+					color: #F0DCF6;
+					font-size: 1.8em;
+					text-align: center;
+				}
+			a 
+				{
+					text-decoration: none;
+					font-weight: bold;
+					color: #F0DCC6;
+				}	
+			.grid2 a
+				{
+					color: #F0DCCC;
+					text-align: center;
+					font-size: 4em;
+					line-height: 1;
+					di
+				}		
+			.grid2 h2
+				{
+			
+				}
+			.grid2 p
+				{
+					display: none;				
+				}
+			/*////////////////////////////////HEADINGS and LISTS SCREEN READERS*/
+			h1 
+				{
+					font-size:2.6em;			/* displayed at 26px */
+				}  
+			h2
+				 {
+				 	font-size:2em;	 	/* displayed at 20px */
+				 } 
+			h3 
+				{
+					font-size:1.6em;		/* displayed at 16px */
+				}  
+			h4 
+				{
+					font-size:1.2em;			/* displayed at 12px */
+				}
+			section h1
+				{
+					display: none;				
+				}
+				
+			/*////////////////////////////////HYPERLINKS*/
+			
+			.pageLink1
+				{
+						width: auto;
+				}
+			.pageLink1 span
+				{
+					cursor: pointer;
+					display: block;
+					padding-top: 8%;	
+				}
+			.pageLink1:link, .pageLink1:hover
+				{
+					/*color: #A2A2A2;*/				
+				}
+
+			
+								/*SOCIAL MEDIA LOGO SPRITES*/
+			.socialMediaBar
+				{
+					width: 100%;
+					margin: 0;
+					padding: 4% 0 2% 0;
+					/*display: none;  						  ON/OFF*/
+				}
+			.socialMediaList
+				{
+					width: auto;
+					height: auto;
+				}		
+			.facebook,.pinterest, .reddit, .twitter
+				{				
+  					color: transparent;
+  					display: block;
+  					float: left;	
+  					font: 0/0 a;
+  					height: 55px;
+  					width: 55px;
+				}	
+			.socialLogoDiv
+				{
+					position: relative;
+					margin: 10px 0;				
+				}	
+			.facebook
+				{
+					background: url("img/logoLinks/FbRdtPrstTwtr_logoSPRITE.png") -2px -2px no-repeat;
+
+				}
+			.pinterest
+				{
+					background: url("img/logoLinks/FbRdtPrstTwtr_logoSPRITE.png") -56px -2px no-repeat;	
+				
+				}
+			.reddit
+				{
+					background: url("img/logoLinks/FbRdtPrstTwtr_logoSPRITE.png") -110px -2px no-repeat;	
+		
+				}
+			.twitter
+				{
+					background: url("img/logoLinks/FbRdtPrstTwtr_logoSPRITE.png") -164px -2px no-repeat;				
+				}	
+				
+				
+			/*////////////////////////////////VIDEO and IMAGES*/	
+			img 
+				{ 
+					-ms-interpolation-mode: bicubic; 
+				}
+
+			.introLogo
+				{
+					width: 80%;
+					height: auto;
+					margin-top: 2%;
+					position: relative;
+					left: 10%;				
+				}
+			.introGraphic
+				{
+					width: 80%;
+					height: auto;
+					margin:  16% 20% 12.85% 10%;
+					cursor: pointer;			
+				}
+			.introGraphic img
+				{
+					width: 100%;
+					
+				}
+			.logo
+				{
+					width: 80%;		
+					position: relative;
+					left: 24%;	
+					padding: 0;
+					margin-top: ;	
+				}
+			.grid2 img
+				{
+					width: 100%;	
+					border-radius:100%;	
+					margin: 0;	
+					position: relative;
+					left: ;	
+					padding: 1%;
+					/*background-color: #ff1;							/*ON/OFF*/
+				}
+
+			.video-curtain
+				{	
+					width: 100%;
+					height: 485px;	
+					padding-bottom: 6%;
+					background-color: #48484D;																											/*ON/OFF*/
+					/*display:none;				/*ON/OFF*/
+					position: absolute;
+					z-index: 1;
+				}
+
+			.video-curtain h2
+				{
+					font-family: "Helvetica", sans-serif;
+					font-weight: bold;
+					font-size: 2em;
+					text-align: center;
+					color: #bbb;	
+				}
+			.video-curtain p
+				{
+					font-family: "Baskerville", serif;
+					font-weight: ;
+					font-size: 2.2em;
+					color: #F0DCF6;	
+					text-align: right;	
+					position: relative;
+					top:;	
+				}
+							/*END of VIDEOWRAPPER*/
+							
+			.backgroundImage img
+				{
+					width: 100%;
+					z-index: -1;
+				}
+			.footAvatar
+				{
+					width: 60%;		
+					border-radius: 60px;	
+				}	
+				
+				
+					
+	/*////////////////////////////////*SCOPABLE DIMENSIONS FOR MEDIA TYPES*/				
+				
+			/* Smartphones (landscape) ----------- */
+	@media only screen and (min-width : 321px) 
+	{
+
+	}
+	/* Smartphones (portrait) ----------- */
+	@media only screen and (max-width : 320px) 
+	{
+	body
+		{
+			background-image: url('img/OT_Table_logo.png');
+			background-repeat: no-repeat;
+			background-size: 26%;
+			background-position: 50% 1.5%;
+		}
+	.mainContent
+		{
+			margin: 0;
+			width: 100%;
+		}
+	.contentContainer
+		{
+			width: 100%;
+			/*background-color: #123;*/
+			margin-top: 6%;
+			padding: 0;
+		}
+	.videoContent
+		{
+			width: 96%;
+			margin: 20% 1% 0 1%;		
+			position: relative;
+			left: 1%;
+		}
+														/*MEDIA AND IMAGES*/
+	.logoDiv
+		{
+			width: 85%;	
+			padding: 0;
+			
+				
+		}
+	.logo
+		{
+			width: 80%;
+			height: 36px;		
+			position: relative;
+			left: 18%;	
+
+		}
+														/*FONTS*/
+	p
+		{
+			display: none;		
+		}
+	.grid2 a
+		{
+			font-size: 1.7em;
+		}
+														/*GRID*/
+	.grid2
+		{
+			width: 98%;
+			margin:1%;
+			padding:;
+			/*background-color: #321;							/*ON/OFF*/
+		}	
+	.colWidth
+		{
+			width: 38.5%;	
+			height: auto;
+			margin: 2% 3.65% 0 3.65%;
+			padding: 2% 2% 2% 2%;
+		}
+	.footMenu
+		{		
+			width: 100%;
+			height: auto;
+			margin: 0;
+			padding-bottom: ;
+			/*background-color: #121;							/*ON/OFF*/
+		}
+
+	/*END*/

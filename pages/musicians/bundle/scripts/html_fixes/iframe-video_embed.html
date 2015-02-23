@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=divice-width, initial-scale=1.0" />
+<title></title>
+<style type="text/css">
+
+			/*////////////////////////////////"FLAT" BACKBONE -- BACKGROUND DIV ELEMENTS*/	
+				body
+				{
+					padding: 0;
+					margin: 0;		
+					background-color: #E86F0C;		
+				}	
+				.wrapper
+				{
+					width: 100%;
+					height: auto;
+
+				}
+				.content
+				{
+					margin: 0;		
+				}
+				.mainContent_1
+				{
+					width: 88.75%;
+					z-index:;	
+					border-radius: 4px;		
+					overflow: auto;	
+					margin: 0 5% 0 5%;											
+				}
+				
+				/*////////////////////////////////IMAGES and IFRAMES */
+				.videoContent
+				{
+					padding: 0 3% 0 3%;
+					background-color: #A59E81;
+				}								
+				/* videoWrapper += iFrame copy-and-pasted from Thierry Koblentz, 2009 http://alistapart.com/article/creating-intrinsic-ratios-for-video */
+				.videoWrapper 
+				{
+					position: relative;
+					padding-bottom: 56.25%; /* 16:9 */
+					padding-top: 25px;
+					height: 0;
+				}
+				.videoWrapper iframe 
+				{
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+				}
+				
+				/*Screen Breaks - Media Queries*/
+				
+				@media only screen and (max-width:1280px)
+				{
+					.mainContent_1
+					{
+						margin-top: 5%;
+					}
+				}
+</style>
+
+</head>
+<body>
+	<div class="wrapper">
+			<div class="mainContent_1">
+				<section class="videoContent">
+					<div class="videoWrapper">
+    					<!-- Copy & Pasted from YouTube   webkitallowfullscreen mozallowfullscreen allowfullscreen -->	
+   						<iframe width="560" height="315" src="//www.youtube.com/embed/IGS8SR4Mu34" frameborder="0" allowfullscreen></iframe>				
+   					</div>
+				</section>
+			</div>
+		</div>
+</body>
+</html>
