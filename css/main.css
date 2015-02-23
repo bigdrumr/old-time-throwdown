@@ -1,10 +1,18 @@
-			/*////////////////////////////////"FLAT" SKIN -- BACKGROUND DIV ELEMENTS*/	
+		
+		.radius {
+			border-radius: 100%;
+		}	
+
+		/*==========
+				LAYOUT*/	
 			body
 				{
 					background-color: #48484D; /*#A4A971*/
 					background-image: url('/Users/jgriffin/Desktop/gitRepo/OTanyone/img/blackMirror_frame_inverted.png');
 					background-size: 100%;
 					background-repeat: no-repeat;
+					width: auto;
+					height: auto;
 					padding: 0;
 					margin: 0;	
 					font-family: Georgia, serif;	
@@ -12,6 +20,7 @@
 				}	
 			.body-padding {
 				padding-top: 300px;
+				padding-bottom: 300px;
 			}
 			.logoDiv
 				{
@@ -33,7 +42,8 @@
 					padding-bottom: 2%;		
 				}
 		
-			/*////////////////////////////////FONT and FONT EFFECTS*/
+		/*=======================
+				FONT and FONT EFFECTS*/
 
 			p
 				{
@@ -55,13 +65,18 @@
 					font-size: 24px;
 					line-height: 1.2;
 					text-decoration: none;
-				}		
+					transition: all 0.2s ease;
+				}
+			.item a:hover {
+				opacity: 0.6;
+			}		
 			.intro-text 
 				{
 					margin-top: 40px;
 				}
 		
-			/*////////////////////////////////VIDEO and IMAGES*/	
+		/*==================
+				VIDEO and IMAGES*/	
 			img 
 				{ 
 					width: 100%;
@@ -75,16 +90,7 @@
 					width: 80%;
 					height: auto;				
 				}
-			.introGraphic
-				{
-					width: 80%;
-					height: auto;
-					margin:  16% 20% 12.85% 10%;			
-				}
-			.introGraphic img
-				{
-					width: 100%;
-				}
+
 			.logo
 				{
 					width: 80%;		
@@ -113,7 +119,7 @@
 				}
 			.video-curtain p
 				{
-					font-family: "Baskerville", serif;
+					font-family: sans-serif;
 					font-weight: ;
 					font-size: 20px;
 					color: #F0DCF6;	
@@ -122,4 +128,19 @@
 					top:;	
 				}
 							/*END of VIDEOWRAPPER*/
-							
+				
+		/*==============
+				BUTTONS*/
+			.intro-graphic {
+				width: 80%;
+				height: auto;
+				margin:  16% 20% 12.85% 10%;
+				cursor: pointer;
+				transition: all 0.2s ease;
+			}	
+			.intro-graphic:hover {
+				opacity: 0.6;
+			}
+
+
+
