@@ -8,7 +8,7 @@
 			body
 				{
 					background-color: #48484D; /*#A4A971*/
-					background-image: url('img/blackMirror_frame_inverted.png');
+					background-image: url('/img/blackMirror_frame_inverted.png');
 					background-size: 100%;
 					background-repeat: no-repeat;
 					width: auto;
