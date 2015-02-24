@@ -44,7 +44,7 @@
 						<a href="../index.html"><img src="../img/OT_Table_logo.png" alt="logo"></a>
 					</div>
 					<div class="col-md-1 second-brand">
-						<img src="../img/fiddle_black_LG.png"alt="">
+						<a href="menu_fiddlers.html"><img src="../img/fiddle_black_LG.png"alt=""></a>
 					</div>
 
 				</div>
@@ -64,8 +64,8 @@
 							Biographic info can go here.
 							Write two or three short paragraphs with a 'Read More' link for a pop-up jQuery page. 				
 						</p>
-						<a href="OT_anyone_Profile_Popout.html" target="_blank" alt="Read More" role"" class="readMore">
-							<small>Read More.</small>
+						<a href="#profileModal" class="read-more" data-toggle="modal">
+							Read More.
 						</a>
 							
 					</div>								
@@ -84,9 +84,45 @@
 						<!--END VIDEO/AUDIO-->
 						</div>
 					</div>
-
 				</div>
-
+					<!-- Modal -->
+					<div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+					    <div class="modal-content text-center">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					        <h4 class="modal-title" id="myModalLabel">Musician Name</h4>
+					      </div>
+					      <div class="modal-body">
+				        	<div class="col-xs-4 col-xs-offset-4">
+				        		<img src="../img/OT_dave-bass_below.png" alt="" class="center-block">
+				        	</div>
+				        	<div class="col-xs-12 ">
+				        		<p class="text-left bio">
+				        			Biographic info can go here.
+				        			Write two or three short paragraphs with a 'Read More' link for a pop-up jQuery page. 				
+				        		</p>
+				        		<p class="text-left bio">
+				        			Biographic info can go here.
+				        			Write two or three short paragraphs with a 'Read More' link for a pop-up jQuery page. 				
+				        		</p>
+				        		<p class="text-left bio">
+				        			Biographic info can go here.
+				        			Write two or three short paragraphs with a 'Read More' link for a pop-up jQuery page. 				
+				        		</p>
+				        		<div class="social-links center-block">
+				        			<a href=""><i class="fa fa-youtube-play"></i></a>
+				        			<a href=""><i class="fa fa-soundcloud"></i></a>
+				        			<a href=""><i class="fa fa-facebook"></i></a>
+				        			<a href=""><i class="fa fa-envelope-o"></i></i></a>
+				        		</div>
+				        	</div>
+					      </div>
+					      <div class="modal-footer">
+					      </div>
+					    </div>
+					  </div>
+					</div>
 	
 </body>
 </html>
