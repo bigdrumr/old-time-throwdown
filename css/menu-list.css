@@ -27,9 +27,12 @@
 .menu-footer li {
 	margin-left: 10px;
 }
-
+.menu-footer address {
+	margin-top: 20px;
+}
 .menu-footer i.fa {
 	font-size: 20px;
+	margin-left: 10px;
 }
 
 /*==================
