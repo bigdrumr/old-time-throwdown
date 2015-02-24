@@ -17,6 +17,12 @@
 .menu section {
 	padding-top: 50px;
 }
+.menu-grid {
+	background-image: url(../img/OT_F-HoleS.png);
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
 .menu-item {
 	padding: 20px 20px;
 }
@@ -28,7 +34,8 @@
 	margin-left: 10px;
 }
 .menu-footer address {
-	margin-top: 20px;
+	margin-top: 10px;
+	padding-top: 10px;
 }
 .menu-footer i.fa {
 	font-size: 20px;
