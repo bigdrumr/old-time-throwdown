@@ -27,6 +27,9 @@
 				padding-top: 300px;
 				padding-bottom: 300px;
 			}
+			.section-padding {
+				padding: 40px;
+			}
 			.logoDiv
 				{
 					width: 79%;	
@@ -50,9 +53,12 @@
 		/*=======================
 				FONT and FONT EFFECTS*/
 
+			p, a, caption {
+				font-family: "Muli", sans-serif !important;
+			}
 			p
 				{
-					font-family: "Muli", sans-serif;
+					
 					font-weight: 300;
 					color: #F0DCF6;
 					font-size: 18px;
@@ -60,12 +66,12 @@
 				}
 			a 
 				{
-					font-family: "Muli", sans-serif;
 					font-weight: 300;
 					text-decoration: none !important;
 					font-weight: bold;
 					color: #F0DCC6;
-				}	
+				}
+	
 			.item a
 				{
 					color: #F0DCCC;
