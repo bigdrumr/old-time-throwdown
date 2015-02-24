@@ -27,8 +27,12 @@
 	.profile p {
 		color: #000;
 	}
+	.profile a {
+		color: #000;
+	}
 	.profile .social-links {
 		margin-top: 20px;
+		font-size: 16px;
 	}
 	p.help-block {
 		font-size: 12px;
