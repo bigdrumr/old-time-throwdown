@@ -16,6 +16,7 @@
 }
 .menu section {
 	padding-top: 50px;
+	overflow-x: hidden;
 }
 .menu-grid {
 	background-image: url(../img/OT_F-HoleS.png);
