@@ -24,6 +24,9 @@
 	.profile .second-brand:hover {
 		opacity: 0.8;
 	} 
+	.string-bands .second-brand {
+		margin-top: 18px;
+	}
 	.main-content .bio {
 		margin: 40px;
 	}
