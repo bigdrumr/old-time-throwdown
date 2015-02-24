@@ -31,11 +31,20 @@
 		color: #000;
 	}
 	.profile .social-links {
+		
+	}
+	.profile .social-links .fa {
 		margin-top: 20px;
+		margin-left: 5px;
+		color: #000;
 		font-size: 16px;
 	}
 	p.help-block {
 		font-size: 12px;
+	}
+
+	.modal img {
+		border-radius: 100%;
 	}
 
 
