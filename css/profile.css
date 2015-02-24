@@ -15,7 +15,7 @@
 		border-right: 1px solid #FFF;
 	}
 	.profile .second-brand {
-		margin-top: 20px;
+		margin-top: 22px;
 	}
 
 	.main-content .bio {
@@ -27,7 +27,9 @@
 	.profile p {
 		color: #000;
 	}
-
+	.profile .social-links {
+		margin-top: 20px;
+	}
 	p.help-block {
 		font-size: 12px;
 	}
