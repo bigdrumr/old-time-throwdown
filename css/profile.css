@@ -7,6 +7,7 @@
 	
 	body.profile {
 		background: #FFF;
+		color: #000;
 	}
 
 	.profile .first-brand {
@@ -17,13 +18,20 @@
 		margin-top: 20px;
 	}
 
+	.main-content .bio {
+		margin: 40px;
+	}
 	.border-left {
 		border-left: 1px solid #000;
+	}
+	.profile p {
+		color: #000;
 	}
 
 	p.help-block {
 		font-size: 12px;
 	}
+
 
 			/*////////////////////////////////FONT and FONT EFFECTS*/
 
