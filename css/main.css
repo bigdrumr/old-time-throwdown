@@ -18,7 +18,7 @@
 			body.home
 				{
 					
-					background-image: url('blackMirror_frame_inverted.png');
+					background-image: url('../img/blackMirror_frame_inverted.png');
 					background-repeat: no-repeat;
 					background-size: 100%;
 				}
@@ -54,7 +54,7 @@
 				FONT and FONT EFFECTS*/
 
 			p, a, caption {
-				font-family: "Muli", sans-serif !important;
+				font-family: "Muli", sans-serif;
 			}
 			p
 				{
@@ -118,11 +118,15 @@
 				{	
 					width: 96%;
 					height: 380px;	
-					padding-bottom: 6%;
-					background-color: #48484D;																											/*ON/OFF*/
+					padding: 2%;
+					background-color: #48484D;																										/*ON/OFF*/
 					position: absolute;
 					z-index: 1;
+					transition: outline 0.3s ease;
 				}
+			.video-curtain:hover {
+				outline: 1px solid #AAA;	
+			}
 			.video-curtain h2
 				{
 					font-family: "Helvetica", sans-serif;
@@ -136,7 +140,7 @@
 					font-family: sans-serif;
 					font-weight: ;
 					font-size: 20px;
-					color: #F0DCF6;	
+					color: #FFF;	
 					text-align: right;	
 					position: relative;
 					top:;	

@@ -10,119 +10,118 @@
 		<!-- TwitterBootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">   
 		<!-- FontAwesome CDN -->
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css">
-		
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css">		
 		<!-- Google Font CDN -->
 		<link href='http://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
-	    <!-- jQuery CDN -->
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	    <!-- jQueryUI CDN -->
-	    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
-	    <!-- TwitterBootstrap JavaScript -->
-	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-	<!-- Custom JS -->
-		<script type="text/javascript" src="../js/OT_jquery.js"></script>
 	<!-- Custom CSS -->
 	    <link rel="stylesheet" type="text/css" href="../css/main.css"/>	
 	    <link rel="stylesheet" type="text/css" href="../css/profile.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/OT_jQuery.css" />
-
 	</head>
 <body class="profile">
 		
-			<!-- HEADER -->			
-			<div class="container-fluid headImage">
-				<div class="row"> 
-				<img src="../img/daveBass_2.jpg" alt="">
+	<!-- HEADER -->			
+	<div class="container-fluid headImage">
+		<div class="row"> 
+		<img src="../img/daveBass_2.jpg" alt="">
+		</div>
+	</div>
+
+	<nav class="nav navbar-inverse">
+		<div class="container-fluid">
+			<div class="col-md-1 first-brand">
+				<a href="../index.html"><img src="../img/OT_Table_logo.png" alt="logo"></a>
+			</div>
+			<div class="col-md-1 second-brand">
+				<a href="menu_fiddlers.html"><img src="../img/fiddle_black_LG.png"alt=""></a>
+			</div>
+
+		</div>
+	</nav>
+	<!--END HEADER-->			
+
+	<!--MAIN CONTENT-->					
+	<div class="container-fluid section-padding main-content">
+		<div class="row">
+	
+			<div class="col-sm-6 col-md-4 text-center">
+				<h1>
+					David Bass
+				</h1>
+				<small>Durham, NC</small>
+				<p class="text-left bio">
+					Biographic info can go here.
+					Write two or three short paragraphs with a 'Read More' link for a pop-up jQuery page. 				
+				</p>
+				<a href="#profileModal" class="read-more" data-toggle="modal">
+					Read More.
+				</a>
+					
+			</div>								
+			<div class="col-sm-6 col-md-8 border-left">
+				<!--VIDEO CONTENT -->
+				<!-- 16:9 aspect ratio -->
+				<div class="col-md-8 col-md-offset-2">
+				<div class="embed-responsive embed-responsive-16by9">
+				  <iframe width="560" height="315" src="https://www.youtube.com/embed/c3LV12wAZ7A" frameborder="0" allowfullscreen></iframe>
+				</div>
+														
+					<p class="help-block text-left">								
+						Accompanied by <a href="" rel="">Issac Deal</a> (guitar), <a href="" rel="">Frank Lee</a> (banjo), <a href="" rel="">Unknown</a> (bass).						
+					</p>
+
+				<!--END VIDEO/AUDIO-->
 				</div>
 			</div>
-		
-			<nav class="nav navbar-inverse">
-				<div class="container-fluid">
-					<div class="col-md-1 first-brand">
-						<a href="../index.html"><img src="../img/OT_Table_logo.png" alt="logo"></a>
-					</div>
-					<div class="col-md-1 second-brand">
-						<a href="menu_fiddlers.html"><img src="../img/fiddle_black_LG.png"alt=""></a>
-					</div>
-
-				</div>
-			</nav>
-			<!--END HEADER-->			
-		
-			<!--MAIN CONTENT-->					
-			<div class="container-fluid section-padding main-content">
-				<div class="row">
-			
-					<div class="col-sm-6 col-md-4 text-center">
-						<h1>
-							David Bass
-						</h1>
-						<small>Durham, NC</small>
-						<p class="text-left bio">
-							Biographic info can go here.
-							Write two or three short paragraphs with a 'Read More' link for a pop-up jQuery page. 				
-						</p>
-						<a href="#profileModal" class="read-more" data-toggle="modal">
-							Read More.
-						</a>
-							
-					</div>								
-					<div class="col-sm-6 col-md-8 border-left">
-						<!--VIDEO CONTENT -->
-						<!-- 16:9 aspect ratio -->
-						<div class="col-md-8 col-md-offset-2">
-						<div class="embed-responsive embed-responsive-16by9">
-						  <iframe width="560" height="315" src="https://www.youtube.com/embed/c3LV12wAZ7A" frameborder="0" allowfullscreen></iframe>
-						</div>
-																
-							<p class="help-block text-left">								
-								Accompanied by <a href="" rel="">Issac Deal</a> (guitar), <a href="" rel="">Frank Lee</a> (banjo), <a href="" rel="">Unknown</a> (bass).						
-							</p>
-
-						<!--END VIDEO/AUDIO-->
-						</div>
-					</div>
-				</div>
-					<!-- Modal -->
-					<div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					  <div class="modal-dialog">
-					    <div class="modal-content text-center">
-					      <div class="modal-header">
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					        <h4 class="modal-title" id="myModalLabel">Musician Name</h4>
-					      </div>
-					      <div class="modal-body">
-				        	<div class="col-xs-4 col-xs-offset-4">
-				        		<img src="../img/OT_dave-bass_below.png" alt="" class="center-block">
-				        	</div>
-				        	<div class="col-xs-12 ">
-				        		<p class="text-left bio">
-				        			Biographic info can go here.
-				        			Write two or three short paragraphs with a 'Read More' link for a pop-up jQuery page. 				
-				        		</p>
-				        		<p class="text-left bio">
-				        			Biographic info can go here.
-				        			Write two or three short paragraphs with a 'Read More' link for a pop-up jQuery page. 				
-				        		</p>
-				        		<p class="text-left bio">
-				        			Biographic info can go here.
-				        			Write two or three short paragraphs with a 'Read More' link for a pop-up jQuery page. 				
-				        		</p>
-				        		<div class="social-links center-block">
-				        			<a href=""><i class="fa fa-youtube-play"></i></a>
-				        			<a href=""><i class="fa fa-soundcloud"></i></a>
-				        			<a href=""><i class="fa fa-facebook"></i></a>
-				        			<a href=""><i class="fa fa-envelope-o"></i></i></a>
-				        		</div>
-				        	</div>
-					      </div>
-					      <div class="modal-footer">
-					      </div>
-					    </div>
-					  </div>
-					</div>
+		</div>
+	<!-- Modal -->
+	<div class="modal fade" id="profileModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content text-center">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Musician Name</h4>
+	      </div>
+	      <div class="modal-body">
+        	<div class="col-xs-4 col-xs-offset-4">
+        		<img src="../img/OT_dave-bass_below.png" alt="" class="center-block">
+        	</div>
+        	<div class="col-xs-12 ">
+        		<p class="text-left bio">
+        			Biographic info can go here.
+        			Write two or three short paragraphs with a 'Read More' link for a pop-up jQuery page. 				
+        		</p>
+        		<p class="text-left bio">
+        			Biographic info can go here.
+        			Write two or three short paragraphs with a 'Read More' link for a pop-up jQuery page. 				
+        		</p>
+        		<p class="text-left bio">
+        			Biographic info can go here.
+        			Write two or three short paragraphs with a 'Read More' link for a pop-up jQuery page. 				
+        		</p>
+        		<div class="social-links center-block">
+        			<a href=""><i class="fa fa-youtube-play"></i></a>
+        			<a href=""><i class="fa fa-soundcloud"></i></a>
+        			<a href=""><i class="fa fa-facebook"></i></a>
+        			<a href=""><i class="fa fa-envelope-o"></i></i></a>
+        		</div>
+        	</div>
+	      </div>
+	      <div class="modal-footer">
+	      </div>
+	    </div>
+	  </div>
+	</div>
 	
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!-- jQueryUI CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+<!-- TwitterBootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<!-- Custom JS -->
+<script type="text/javascript" src="../js/OT_jquery.js"></script>	
 </body>
 </html>
